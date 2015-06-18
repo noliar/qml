@@ -1,11 +1,20 @@
 # QML support for the Go language
 
+[![Build Status][status]][AppVeyor]
+[![Issue PR][Issue PR]][issues]
+[![License][License]][LICENSE]
+
 Documentation
 -------------
 
 The introductory documentation as well as the detailed API documentation is
 available at [gopkg.in/qml.v1](http://godoc.org/gopkg.in/qml.v1).
 
+[status]: https://img.shields.io/appveyor/ci/sephz/qml.svg?style=flat-square
+[AppVeyor]: https://ci.appveyor.com/project/sephz/qml
+[Issue PR]: https://img.shields.io/github/issues/go-qml/qml.svg?style=flat-square
+[issues]: https://github.com/go-qml/qml/issues
+[License]: https://img.shields.io/badge/license-LGPLv3-blue.svg?style=flat-square
 
 Blog posts
 ----------
@@ -133,6 +142,7 @@ On Windows you'll need the following:
 
   * [MinGW gcc](http://sourceforge.net/projects/mingw/files/latest/download) 4.8.1 (install mingw-get and install the gcc from within the setup GUI)
   * [Qt 5.1.1](http://download.qt-project.org/official_releases/qt/5.1/5.1.1/qt-windows-opensource-5.1.1-mingw48_opengl-x86-offline.exe) for MinGW 4.8
+  * [pkg-config-lite](http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip)
   * [Go >= 1.2](http://golang.org/doc/install)
 
 Then, assuming Qt was installed under `C:\Qt5.1.1\`, set up the following environment variables in the respective configuration:
