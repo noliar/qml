@@ -1,6 +1,5 @@
 #!/bin/bash
-set -ev
-if [ ! -d "/usr/local/opt/qt5"]; then
+if [ ! -d "/usr/local/opt/qt5" ]; then
     brew install qt5
 fi
 brew link --force qt5
