@@ -1,0 +1,24 @@
+language: go
+sudo: true
+os:
+  - osx
+  - linux
+go:
+  - tip
+matrix:
+  allow_failures:
+    - os: osx
+    - os: linux
+before_install:
+  - . cmd/ci/travis/$TRAVIS_OS_NAME/before_install.sh
+install:
+  - . cmd/ci/travis/$TRAVIS_OS_NAME/install.sh
+before_script:
+  - . cmd/ci/travis/before_script.sh
+script:
+  - go build
+after_script:
+  - . cmd/ci/travis/$TRAVIS_OS_NAME/after_script.sh
+cache:
+  directories:
+    - $QTDIR
