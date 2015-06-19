@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! -d "/usr/local/opt/qt5" ]; then
-    brew install qt5 go
+    brew install qt5
 fi
 brew link --force qt5
 export QTDIR=/usr/local/opt/qt5

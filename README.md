@@ -1,7 +1,7 @@
 # QML support for the Go language [![License][License]][LICENSE]
-|Windows|Linux & Mac|
-|:-:|:-:|
-|[![Build Status][windows]][AppVeyor]|[![Build Status][*inux]][Travis CI]|
+|Windows|Linux|Mac|
+|:-:|:-:|:-:|
+|[![Windows Build Status][windows]][AppVeyor]|[![Linux Build Status][linux]][Circle CI]|[![Mac Build Status][mac]][Travis CI]|
 
 
 Documentation
@@ -12,7 +12,9 @@ available at [gopkg.in/qml.v1](http://godoc.org/gopkg.in/qml.v1).
 
 [windows]: https://img.shields.io/appveyor/ci/sephz/qml.svg?style=flat-square
 [AppVeyor]: https://ci.appveyor.com/project/sephz/qml
-[*inux]: https://img.shields.io/travis/noliar/qml.svg?style=flat-square
+[linux]: https://img.shields.io/circleci/project/noliar/qml.svg?style=flat-square
+[Circle CI]: https://circleci.com/gh/noliar/qml
+[mac]: https://img.shields.io/travis/noliar/qml.svg?style=flat-square
 [Travis CI]: https://travis-ci.org/noliar/qml
 [License]: https://img.shields.io/badge/license-LGPLv3-blue.svg?style=flat-square
 
