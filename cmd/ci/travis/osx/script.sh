@@ -6,3 +6,6 @@ if [ "$GOHOSTARCH" != "amd64" ]; then
 else
     go test -v -i -race
 fi
+echo "Run a sample"
+cd examples/customicon/relativepath
+go run relativepath.go
