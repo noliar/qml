@@ -1,0 +1,29 @@
+version: '{branch} build{build}'
+clone_folder: C:\projects\src\gopkg.in\qml.v1
+environment:
+  QTDIR: C:\Qt\5.4\mingw491_32
+  MINGW: C:\Qt\Tools\mingw491_32
+  PKGCONFIGLITE_VERSION: 0.28
+#  MINGW_VERSION: 4.8.3.20150601
+  GOPATH: C:\projects
+
+  matrix:
+  - platform: x86
+    GOROOT: C:\go-x86
+#  - platform: x64
+#    MINGW: C:\tools\mingw64
+matrix:
+  allow_failures:
+    - platform: x64
+install:
+- cmd/ci/appveyor/windows/install.cmd
+cache:
+- C:\ProgramData\chocolatey\bin\pkg-config.exe -> appveyor.yml
+- C:\ProgramData\chocolatey\lib\pkgconfiglite.%PKGCONFIGLITE_VERSION% -> appveyor.yml
+#- C:\tools\mingw64 -> appveyor.yml
+test_script:
+- cmd/ci/appveyor/windows/test.cmd
+build_script:
+- cmd/ci/appveyor/windows/build.cmd
+on_failure:
+- cmd/ci/appveyor/windows/failure.cmd

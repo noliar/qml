@@ -1,4 +1,8 @@
-# QML support for the Go language
+# QML support for the Go language [![License][License]][LICENSE]
+|Windows|Linux|Mac|
+|:-:|:-:|:-:|
+|[![Windows Build Status][windows]][AppVeyor]|[![Linux Build Status][linux]][Circle CI]|[![Mac Build Status][mac]][Travis CI]|
+
 
 Documentation
 -------------
@@ -6,6 +10,13 @@ Documentation
 The introductory documentation as well as the detailed API documentation is
 available at [gopkg.in/qml.v1](http://godoc.org/gopkg.in/qml.v1).
 
+[windows]: https://img.shields.io/appveyor/ci/sephz/qml.svg?style=flat-square
+[AppVeyor]: https://ci.appveyor.com/project/sephz/qml
+[linux]: https://img.shields.io/circleci/project/noliar/qml.svg?style=flat-square
+[Circle CI]: https://circleci.com/gh/noliar/qml
+[mac]: https://img.shields.io/travis/noliar/qml.svg?style=flat-square
+[Travis CI]: https://travis-ci.org/noliar/qml
+[License]: https://img.shields.io/badge/license-LGPLv3-blue.svg?style=flat-square
 
 Blog posts
 ----------
@@ -133,6 +144,7 @@ On Windows you'll need the following:
 
   * [MinGW gcc](http://sourceforge.net/projects/mingw/files/latest/download) 4.8.1 (install mingw-get and install the gcc from within the setup GUI)
   * [Qt 5.1.1](http://download.qt-project.org/official_releases/qt/5.1/5.1.1/qt-windows-opensource-5.1.1-mingw48_opengl-x86-offline.exe) for MinGW 4.8
+  * [pkg-config-lite](http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip)
   * [Go >= 1.2](http://golang.org/doc/install)
 
 Then, assuming Qt was installed under `C:\Qt5.1.1\`, set up the following environment variables in the respective configuration:
